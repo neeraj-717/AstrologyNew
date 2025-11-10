@@ -18,7 +18,7 @@ const Astrologyblog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/blog"); // update to your deployed API URL
+        const res = await axios.get("https://astrologyb.onrender.com/api/blog"); // update to your deployed API URL
         setBlogs(res.data);
       } catch (err) {
         console.error("Error fetching blogs:", err);

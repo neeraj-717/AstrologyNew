@@ -12,7 +12,7 @@ const UserKundlis = () => {
   const fetchKundlis = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/kundli', {
+      const response = await axios.get('https://astrologyb.onrender.com/api/kundli', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setKundlis(response.data?.data || []);

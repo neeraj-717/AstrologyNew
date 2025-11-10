@@ -15,7 +15,7 @@ const Orders = () => {
   const fetchOrders = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get('http://localhost:5000/api/orders', {
+      const { data } = await axios.get('https://astrologyb.onrender.com/api/orders', {
         headers: getAuthHeaders(),
       });
       setOrders(data.orders);
@@ -40,7 +40,7 @@ const Orders = () => {
     try {
       console.log('Cancelling order:', orderId);
       const response = await axios.patch(
-        `http://localhost:5000/api/orders/${orderId}/cancel`, 
+        `https://astrologyb.onrender.com/api/orders/${orderId}/cancel`, 
         {}, 
         {
           headers: {

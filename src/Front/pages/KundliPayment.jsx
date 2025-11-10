@@ -27,7 +27,7 @@ const KundliPayment = () => {
 
       // Create Razorpay order
       const orderResponse = await axios.post(
-        'http://localhost:5000/api/payment/create-kundli-order',
+        'https://astrologyb.onrender.com/api/payment/create-kundli-order',
         {
           amount: KUNDLI_PRICE,
           kundliData
@@ -64,7 +64,7 @@ const KundliPayment = () => {
           try {
             // Verify payment on server
             const verifyResponse = await axios.post(
-              'http://localhost:5000/api/payment/verify-kundli-payment',
+              'https://astrologyb.onrender.com/api/payment/verify-kundli-payment',
               {
                 razorpay_order_id: response.razorpay_order_id,
                 razorpay_payment_id: response.razorpay_payment_id,

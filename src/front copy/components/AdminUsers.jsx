@@ -14,7 +14,7 @@ const AdminUsers = () => {
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5000/api/auth/users', {
+      const response = await axios.get('https://astrologyb.onrender.com/api/auth/users', {
         headers: getAuthHeaders()
       });
       setUsers(response.data.users);

@@ -19,7 +19,7 @@ const DashboardOverview = () => {
 
   const fetchStats = async () => {
     try {
-      const { data } = await axios.get('http://localhost:5000/api/admin/stats', {
+      const { data } = await axios.get('https://astrologyb.onrender.com/api/admin/stats', {
         headers: getAuthHeaders()
       });
       setStats(data.stats);
@@ -28,8 +28,8 @@ const DashboardOverview = () => {
       // Fallback to basic API calls
       try {
         const [productsRes, blogsRes] = await Promise.all([
-          axios.get('http://localhost:5000/api/product'),
-          axios.get('http://localhost:5000/api/blog')
+          axios.get('https://astrologyb.onrender.com/api/product'),
+          axios.get('https://astrologyb.onrender.com/api/blog')
         ]);
         setStats({
           users: 0,

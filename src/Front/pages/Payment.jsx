@@ -61,7 +61,7 @@ const Paymentway = () => {
 
       // ✅ Create Razorpay order
       const { data } = await axios.post(
-        "http://localhost:5000/api/payment/create-order",
+        "https://astrologyb.onrender.com/api/payment/create-order",
         { amount: totalAmount },
         config
       );
@@ -71,7 +71,7 @@ const Paymentway = () => {
         // Simulate payment for test mode
         try {
           await axios.post(
-            "http://localhost:5000/api/payment/verify-payment",
+            "https://astrologyb.onrender.com/api/payment/verify-payment",
             { 
               razorpay_order_id: `test_order_${Date.now()}`,
               razorpay_payment_id: `test_pay_${Date.now()}`,
@@ -100,7 +100,7 @@ const Paymentway = () => {
         handler: async function (response) {
           try {
             await axios.post(
-              "http://localhost:5000/api/payment/verify-payment",
+              "https://astrologyb.onrender.com/api/payment/verify-payment",
               { ...response, orderData },
               config
             );

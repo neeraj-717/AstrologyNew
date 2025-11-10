@@ -31,7 +31,7 @@ export const CartProvider = ({ children }) => {
         return;
       }
       
-      const { data } = await axios.get('http://localhost:5000/api/cart', {
+      const { data } = await axios.get('https://astrologyb.onrender.com/api/cart', {
         headers: getAuthHeaders(),
       });
       setCartItems(data.items || []);
@@ -49,7 +49,7 @@ export const CartProvider = ({ children }) => {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        'http://localhost:5000/api/cart/add',
+        'https://astrologyb.onrender.com/api/cart/add',
         { productId: product._id, quantity: 1 },
         { headers: getAuthHeaders() }
       );
@@ -65,7 +65,7 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = async (productId) => {
     try {
       setLoading(true);
-      const { data } = await axios.delete(`http://localhost:5000/api/cart/remove/${productId}`, {
+      const { data } = await axios.delete(`https://astrologyb.onrender.com/api/cart/remove/${productId}`, {
         headers: getAuthHeaders(),
       });
       setCartItems(data.items);
@@ -80,7 +80,7 @@ export const CartProvider = ({ children }) => {
   const clearCart = async () => {
     try {
       setLoading(true);
-      await axios.delete('http://localhost:5000/api/cart/clear', {
+      await axios.delete('https://astrologyb.onrender.com/api/cart/clear', {
         headers: getAuthHeaders(),
       });
       setCartItems([]);

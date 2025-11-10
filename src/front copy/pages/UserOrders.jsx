@@ -9,7 +9,7 @@ const UserOrders = () => {
   const fetchOrders = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/orders', {
+      const response = await axios.get('https://astrologyb.onrender.com/api/orders', {
         headers: { Authorization: `Bearer ${token}` }
       });
       const ordersData = response.data?.orders || response.data || [];

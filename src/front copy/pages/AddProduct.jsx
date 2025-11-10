@@ -39,7 +39,7 @@ const AddProduct = () => {
         return;
       }
       
-      await axios.post('http://localhost:5000/api/product', formDataToSend, {
+      await axios.post('https://astrologyb.onrender.com/api/product', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`

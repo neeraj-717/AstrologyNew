@@ -17,7 +17,7 @@ const Dashbooardblog = () => {
 
     const fetchBlogs = async () => {
         try {
-            const { data } = await axios.get('http://localhost:5000/api/blog');
+            const { data } = await axios.get('https://astrologyb.onrender.com/api/blog');
             setBlogs(data);
         } catch (error) {
             console.error('Error fetching blogs:', error);
@@ -50,7 +50,7 @@ const Dashbooardblog = () => {
                 return;
             }
             
-            await axios.delete(`http://localhost:5000/api/blog/${id}`, {
+            await axios.delete(`https://astrologyb.onrender.com/api/blog/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

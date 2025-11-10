@@ -13,7 +13,7 @@ const DashboardOrders = () => {
 
   const fetchOrders = async () => {
     try {
-      const { data } = await axios.get('http://localhost:5000/api/admin/orders', {
+      const { data } = await axios.get('https://astrologyb.onrender.com/api/admin/orders', {
         headers: getAuthHeaders()
       });
       setOrders(data.orders || []);
@@ -36,7 +36,7 @@ const DashboardOrders = () => {
 
   const updateOrderStatus = async (orderId, status) => {
     try {
-      await axios.patch(`http://localhost:5000/api/admin/orders/${orderId}`, 
+      await axios.patch(`https://astrologyb.onrender.com/api/admin/orders/${orderId}`, 
         { status }, 
         { headers: getAuthHeaders() }
       );

@@ -122,9 +122,9 @@ const Home = () => {
             try {
                 // Add error handling for each API call
                 const [productsRes, blogsRes, photosRes] = await Promise.all([
-                    axios.get('http://localhost:5000/api/product'),
-                    axios.get('http://localhost:5000/api/blog'),
-                    axios.get('http://localhost:5000/api/photo')
+                    axios.get('https://astrologyb.onrender.com/api/product'),
+                    axios.get('https://astrologyb.onrender.com/api/blog'),
+                    axios.get('https://astrologyb.onrender.com/api/photo')
                 ]);
 
                 setTestimonials(localTestimonials);

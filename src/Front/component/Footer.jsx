@@ -22,7 +22,7 @@ const Footer = () => {
         // Fetch recent blog posts
         const fetchRecentPosts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/blog');
+                const response = await axios.get('https://astrologyb.onrender.com/api/blog');
                 console.log('Blog response:', response.data);
                 setRecentPosts(response.data.slice(0, 2)); // Get latest 2 posts
             } catch (error) {
