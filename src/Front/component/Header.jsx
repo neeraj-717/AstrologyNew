@@ -119,7 +119,7 @@ const Header = () => {
       <header className="bg-black fixed z-50 text-white w-full">
         <div className="flex items-center justify-between px-6 py-4">
           <Link to="/">
-            <img src={logo} alt="Logo" className="w-20 md:w-[150px] h-auto" />
+            <img src={logo} alt="Logo" className="w-20 md:w-[200px] h-auto" />
           </Link>
           <nav className="hidden md:flex relative items-center">
             {getMenuItems().map((item, i) =>

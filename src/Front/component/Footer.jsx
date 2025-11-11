@@ -55,7 +55,7 @@ const Footer = () => {
 
             <div className='fixed bottom-20 z-50 right-10'>
                 <Link to={url}><FaWhatsapp size={50} className='bg-green-600 p-1 rounded-xl text-white animate-bounce' /></Link>
-                <Link to={`tel:${phoneNumber}`}><IoCallOutline size={50} className='bg-red-600 p-1 rounded-xl text-white mt-5 animate-bounce' /></Link>
+                <Link className='flex items-center gap-2.5 animate-bounce text-2xl' to={`tel:${phoneNumber}`}><IoCallOutline size={50} className='bg-green-600 p-1 rounded-xl text-white mt-5 ' /> Call ?</Link>
             </div>
             {visible && (
                 <button
@@ -72,11 +72,11 @@ const Footer = () => {
                         <img src={logo} alt="Footer Logo" className='mb-4' />
                         <p className="flex items-center gap-3 hover:text-yellow-600 duration-500">
                             <FaLocationDot size={50} />
-                            <span>Shree Ram Bhawan 14, Arihent Vatika, Opp. Shyam Nagar, New Sangner Road Near Mahatma Jyoti Rao Phule Mahila College Sodala-19, Jaipur, Rajasthan, INDIA</span>
+                            <span>Shree Ram Bhawan 13,14, Arihent Vatika, Opp. Shyam Nagar, New Sangner Road Near Mahatma Jyoti Rao Phule Mahila College Sodala-19, Jaipur, Rajasthan, INDIA</span>
                         </p>
                         <p className="flex items-center gap-3 hover:text-yellow-600 duration-500">
                             <IoCall />
-                            <span>++919414237095</span>
+                            <span>+919414237095</span>
                         </p>
                         <p className="flex items-center gap-3 hover:text-yellow-600 duration-500">
                             <IoMdMail />

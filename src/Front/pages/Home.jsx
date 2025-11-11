@@ -253,7 +253,7 @@ const Home = () => {
                     initial={{ scale: 1.3, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className='md:flex-row-reverse md:flex overflow-hidden pt-20 pb-30' style={{ backgroundImage: `url(${bgbannere})` }}>
+                    className='md:flex-row-reverse md:flex overflow-hidden pt-30 pb-30 right-[-100]' style={{ backgroundImage: `url(${bgbannere})`, backgroundPosition:`right-[-100px]`}}>
                     <div className="relative md:w-[50%] min-h-[380px] text-white flex flex-col items-center justify-center">
                         <div
                             className="absolute inset-0 bg-cover bg-center animate-[spin_10s_linear_infinite] bg-no-repeat z-0"
@@ -281,7 +281,7 @@ const Home = () => {
                                 Available Hours: <span className="text-orange-400">7 AM to 1 PM</span> and <span className="text-orange-400">4 PM to 8 PM</span>
                             </p>
                             <p className="text-base text-gray-200 mt-2 font-medium">
-                                " समय निकाल कर पधारें "
+                                " समय लेकर पधारें "
                             </p>
                         </div>
                     </div>

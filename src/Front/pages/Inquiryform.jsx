@@ -198,7 +198,7 @@ const Inquiryform = () => {
               size={50}
               className="border text-orange-500 rounded-full p-2 border-orange-500"
             />
-            Shree Ram Bhawan 14, Arihent Vatika, Opp. Shyam Nagar, New Sangner
+            Shree Ram Bhawan 13,14, Arihent Vatika, Opp. Shyam Nagar, New Sangner
             Road Near Mahatma Jyoti Rao Phule Mahila College Sodala-19, Jaipur,
             Rajasthan, INDIA
           </p>

@@ -13,7 +13,7 @@ const Photogallery = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  const imagesPerPage = 10;
+  const imagesPerPage = 8;
   const totalPages = Math.ceil(photos.length / imagesPerPage);
   const startIndex = (currentPage - 1) * imagesPerPage;
   const currentImages = photos.slice(startIndex, startIndex + imagesPerPage);
@@ -77,7 +77,7 @@ const Photogallery = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center pb-10"
         >
-          <img src={downlod} alt="download" className="m-auto my-5 w-14 md:w-20" />
+          <img src={downlod} alt="download" className="m-auto my-5 w-14 md:w-50" />
           <p className="max-w-2xl mx-auto text-gray-700">
             Explore our gallery of divine moments captured through the lens of devotion and spirituality.
           </p>
@@ -90,7 +90,7 @@ const Photogallery = () => {
         {/* --- PHOTO GRID --- */}
         {!loading && !error && (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 place-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center">
               {currentImages.map((photo, index) => (
                 <motion.div
                   key={photo._id || index}
@@ -102,7 +102,7 @@ const Photogallery = () => {
                   <img
                     src={photo.imageUrl}
                     alt={`gallery-${index}`}
-                    className="rounded-xl duration-500 hover:scale-105 shadow-lg w-[250px] h-[180px] md:w-[220px] md:h-40 object-cover"
+                    className="rounded-xl duration-500 hover:scale-105 shadow-lg w-[250px] h-[180px] md:w-[300px] md:h-70 object-contain"
                   />
                 </motion.div>
               ))}

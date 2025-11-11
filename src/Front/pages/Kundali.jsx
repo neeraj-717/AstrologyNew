@@ -36,7 +36,7 @@ const KundliForm = () => {
         navigate('/login');
         return;
       }
-      
+
       // Use formData directly as it already has placeOfBirth
       const kundliData = {
         name: formData.name,
@@ -44,7 +44,7 @@ const KundliForm = () => {
         timeOfBirth: formData.timeOfBirth,
         placeOfBirth: formData.placeOfBirth
       };
-      
+
       // Redirect to payment page with form data
       navigate('/kundli-payment', { state: { kundliData } });
     } catch (err) {
@@ -59,7 +59,7 @@ const KundliForm = () => {
     <div className="min-h-screen bg-gradient-to-b from-black via-[#0b0b22] to-[#1a0d24] text-white py-10 px-6 pt-24">
       <div className="max-w-2xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-8 text-yellow-400">Generate Your Kundli</h1>
-        
+
         <form onSubmit={handleSubmit} className="bg-[#121212]/80 p-6 rounded-lg border border-yellow-600/30 space-y-4">
           <input
             type="text"
@@ -78,6 +78,9 @@ const KundliForm = () => {
               value={formData.dateOfBirth}
               onChange={handleChange}
               required
+              style={{
+                colorScheme: "dark", // 👈 icon white ho jayega
+              }}
               className="w-full p-3 rounded bg-transparent border border-yellow-600/40 focus:outline-none focus:border-yellow-500 text-white"
             />
             <input
@@ -86,6 +89,9 @@ const KundliForm = () => {
               value={formData.timeOfBirth}
               onChange={handleChange}
               required
+              style={{
+                colorScheme: "dark", // 👈 icon white ho jayega
+              }}
               className="w-full p-3 rounded bg-transparent border border-yellow-600/40 focus:outline-none focus:border-yellow-500 text-white"
             />
           </div>
@@ -161,12 +167,12 @@ const KundliForm = () => {
             required
             className="w-full p-3 rounded bg-transparent border border-yellow-600/40 focus:outline-none focus:border-yellow-500 text-white"
           >
-            <option  className='text-black' value="">Select Astrology Service</option>
-            <option  className='text-black' value="Kundli">Kundli</option>
-            <option  className='text-black' value="Matchmaking">Matchmaking</option>
-            <option  className='text-black' value="Career">Career Prediction</option>
-            <option  className='text-black' value="Health">Health Analysis</option>
-            <option  className='text-black' value="Finance">Finance / Business</option>
+            <option className='text-black' value="">Select Astrology Service</option>
+            <option className='text-black' value="Kundli">Kundli</option>
+            <option className='text-black' value="Matchmaking">Matchmaking</option>
+            <option className='text-black' value="Career">Career Prediction</option>
+            <option className='text-black' value="Health">Health Analysis</option>
+            <option className='text-black' value="Finance">Finance / Business</option>
           </select>
 
           <input
