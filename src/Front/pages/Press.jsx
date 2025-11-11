@@ -10,7 +10,7 @@ import Pressimg3 from "../../Front/assest/imgs/Pressimg3.jpeg";
 import Pressimg4 from "../../Front/assest/imgs/Pressimg4.jpeg";
 import Pressimg6 from "../../Front/assest/imgs/press6.jpeg";
 import Pressimg7 from "../../Front/assest/imgs/press7.jpeg";
-import Pressimg8 from "../../Front/assest/imgs/Press8.jpeg";
+import Pressimg8 from "../../Front/assest/imgs/press8.jpeg";
 import Pressimg9 from "../../Front/assest/imgs/press9.jpeg";
 import Pressimg10 from "../../Front/assest/imgs/press10.jpeg";
 import Pressimg11 from "../../Front/assest/imgs/press11.jpeg";
