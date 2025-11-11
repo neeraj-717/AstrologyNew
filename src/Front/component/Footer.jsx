@@ -32,6 +32,20 @@ const Footer = () => {
         };
         fetchRecentPosts();
     }, []);
+    // useEffect(() => {
+    //     // Fetch recent blog posts
+    //     const fetchRecentPosts = async () => {
+    //         try {
+    //             const response = await axios.get('https://astrologyb.onrender.com/api/blog');
+    //             console.log('Blog response:', response.data);
+    //             setRecentPosts(response.data.slice(0, 2)); // Get latest 2 posts
+    //         } catch (error) {
+    //             console.error('Error fetching recent posts:', error);
+    //             setRecentPosts([]);
+    //         }
+    //     };
+    //     fetchRecentPosts();
+    // }, []);
 
     const scrollToTop = () => {
         const scrollDuration = 800;
