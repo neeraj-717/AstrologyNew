@@ -8,19 +8,19 @@ import Pressimg from "../../Front/assest/imgs/Pressimg1.jpeg";
 import Pressimg2 from "../../Front/assest/imgs/Pressimg2.jpeg";
 import Pressimg3 from "../../Front/assest/imgs/Pressimg3.jpeg";
 import Pressimg4 from "../../Front/assest/imgs/Pressimg4.jpeg";
-import Pressimg6 from "../../Front/assest/imgs/Press6.jpeg";
-import Pressimg7 from "../../Front/assest/imgs/Press7.jpeg";
+import Pressimg6 from "../../Front/assest/imgs/press6.jpeg";
+import Pressimg7 from "../../Front/assest/imgs/press7.jpeg";
 import Pressimg8 from "../../Front/assest/imgs/Press8.jpeg";
-import Pressimg9 from "../../Front/assest/imgs/Press9.jpeg";
-import Pressimg10 from "../../Front/assest/imgs/Press10.jpeg";
-import Pressimg11 from "../../Front/assest/imgs/Press11.jpeg";
-import Pressimg12 from "../../Front/assest/imgs/Press12.jpeg";
-import Pressimg13 from "../../Front/assest/imgs/Press13.jpeg";
-import Pressimg16 from "../../Front/assest/imgs/Press16.jpeg";
-import Pressimg14 from "../../Front/assest/imgs/Press14.jpeg";
-import Pressimg17 from "../../Front/assest/imgs/Press17.jpeg";
-import Pressimg18 from "../../Front/assest/imgs/Press18.jpeg";
-import Pressimg19 from "../../Front/assest/imgs/Press19.jpeg";
+import Pressimg9 from "../../Front/assest/imgs/press9.jpeg";
+import Pressimg10 from "../../Front/assest/imgs/press10.jpeg";
+import Pressimg11 from "../../Front/assest/imgs/press11.jpeg";
+import Pressimg12 from "../../Front/assest/imgs/press12.jpeg";
+import Pressimg13 from "../../Front/assest/imgs/press13.jpeg";
+import Pressimg16 from "../../Front/assest/imgs/press16.jpeg";
+import Pressimg14 from "../../Front/assest/imgs/press14.jpeg";
+import Pressimg17 from "../../Front/assest/imgs/press17.jpeg";
+import Pressimg18 from "../../Front/assest/imgs/press18.jpeg";
+import Pressimg19 from "../../Front/assest/imgs/press19.jpeg";
 
 const Press = () => {
  const pressData = [
